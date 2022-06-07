@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import React from 'react';
-import ImageCards from '../../src/components/images.js';
+import ImageCards from '../../src/components/images.jsx';
 
 describe('Images', () => {
     it('renders without crashing', () => {

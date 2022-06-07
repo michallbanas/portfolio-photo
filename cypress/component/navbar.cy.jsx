@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import React from 'react';
-import Navbar from '../../src/components/navbar.js';
+import Navbar from '../../src/components/navbar.jsx';
 
 describe('Navbar', () => {
     it('renders without crashing', () => {
