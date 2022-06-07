@@ -1,13 +1,83 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  grid-template-areas: 
+    'div header header'
+    'nav main aside'
+    'footer footer footer';
+  grid-template-columns: 0.5fr 2fr 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Header */
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding-top: 5em;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+/* Navigation */
+
+nav {
+  grid-area: nav;
+  padding-top: 2em;
+}
+
+#navigation {
+  display: grid;
+  text-align: right;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navList {
+  padding-bottom: 0.6em;
+}
+
+/* Photo section */
+
+#sectionPhoto {
+  grid-area: main;
+  padding-top: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* Aside */
+
+aside {
+  grid-area: aside;
+  padding-top: 2em;
+}
+
+#click {
+  writing-mode: vertical-lr;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
 }
