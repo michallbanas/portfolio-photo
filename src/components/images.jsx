@@ -1,5 +1,5 @@
 import React from 'react';
-import data from '../data/images-data.js';
+import data from '../data/images-data.jsx';
 import '../index.css';
 
 const ImageCards = () => {
