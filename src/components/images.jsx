@@ -10,6 +10,7 @@ const ImageCards = () => {
                         alt={item.altText}
                         className="card-image"
                         width="300"
+                        height="375"
                         data-test="testImage"
                         src={item.imageSrc}>
                     </img>
